@@ -21,9 +21,19 @@ Content-Type: application/json
 }
 
 ###
-@roomId = {{getRoom.response.body.$.[8].id}}
+@roomId = {{createRoom.response.body.$.roomId}}
 
 ###
 # Get Room Questions
 # @name getRoomQuestions
 GET {{baseUrl}}/rooms/{{roomId}}/questions
+
+###
+# Create Question
+# @name createQuestion
+POST {{baseUrl}}/rooms/{{roomId}}/questions
+Content-Type: application/json
+
+{
+  "question": "Qual é o seu seu tema do vscode favorito?"
+}
