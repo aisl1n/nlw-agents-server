@@ -15,6 +15,13 @@
       "when": 1752080445056,
       "tag": "0001_strange_joshua_kane",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752161056141,
+      "tag": "0002_friendly_marvel_zombies",
+      "breakpoints": true
     }
   ]
 }
